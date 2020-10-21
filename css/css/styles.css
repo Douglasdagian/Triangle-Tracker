@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: yellowgreen;
+}
+nav{
+    background: orange;
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    color: red;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;                                     
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.active,a:hover{
+    background: blue;
+    transition: .5s;
+}
+.home{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin:5px;
+    background-image: url("/image/pexels-rodolfo-clix-1596884.jpg");
+    color: white;
+    background-size: cover;
+}
+#order{
+    background-image: url("/image/pexels-norma-mortenson-4393443.jpg");
+    padding: 20px;
+    margin:5px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+}
+#about-us {
+    padding: 20px;
+    margin:5px;
+    color: black;
+    background-image: url("/image/pexels-quintin-gellar-2327834.jpg");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+}
+#contact-us {
+    padding: 20px;
+    margin:5px;
+    color: black;
+    background-image: url("/image/pexels-jessica-gaudioso-4400140.jpg");  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+    position: bottom;
+}
+#home {
+    margin-top: 100px;
+}
+.card img {
+    height: 200px;
+    width: 200px;
+   
+}
+.wrapper{
+    display: inline-flex;
+  }
+.menu {
+    height: 20px;
+    width: 20px;
+    display: right;
+  }
+.overlay2,
+.overlay3,
+.overlay4,
+.overlay5{
+      position: absolute;
+      text-transform: uppercase;
+      border: 2px solid white;
+      background-color:rgba(8, 10,20, 0.5);
+      padding: 50px;
+      margin-top: 40px;
+      margin-left: 40px;
+      display: none;
+  }
+  #show{
+      align-items: center;
+      margin: 5px;
+      padding: 10px 7p;
+      width: 100%;
+      margin-top: 10%;
+  }
+  #show2{
+    align-items: center;
+    margin: 5px;
+    padding: 10px 7p;
+    width: 100%;
+    margin-top: 10%;
+}
+#show3{
+    align-items: center;
+    margin: 5px;
+    padding: 10px 7p;
+    width: 100%;
+    margin-top: 10%;
+}
+#show1{
+    align-items: center;
+    margin: 5px;
+    padding: 10px 7p;
+    width: 100%;
+    margin-top: 10%;
+}
+#font{
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+}
+.wrapper .icon{
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon span i{
+    line-height: 60px;
+    font-size: 25px;
+  }
+  .wrapper .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  .text-center13{
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .text-center12{
+    color: blue;
+  }
+
+  .wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover span{
+    color: #fff;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  }
+  .wrapper .facebook:hover span,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip:before{
+    background: hsl(221, 87%, 45%);
+  }
+  .wrapper .twitter:hover span,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip:before{
+    background: #46C1F6;
+  }
+  .wrapper .instagram:hover span,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip:before{
+    background: #f04b22f8;
+  }
+  .wrapper .youtube:hover span,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip:before{
+    background: hsl(4, 100%, 40%);
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #about-us{
+    background-image: url("/image/pexels-quintin-gellar-2327834.jpg");
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(8, 10,20, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .card:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
