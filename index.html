@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>TRIANGLE TRACKER</title>
 </head>
+
 <body>
+    <p>This is an application that will help us know whether a triangle is isosceles, equilateral, scalene or NOT a
+        triangle at all.
+
+        Based on the functionality of the application, key points to note are:
+    </p>
+    <ul>
+        <li>For an equilateral triangle, all sides must be equal.</li>
+        <li>For an isosceles triangle, two sides are exactly equal.</li>
+        <li>For a scalene triangle, none of the sides is equal. However, the sum of any two sides of the triangle must
+            be greater than the third side.</li>
+        <li>Most importantly, if the sum of any two sides of the triangle is equal to or less than the third remaining
+            side, then a triangle CANNOT be formed using those values. (For example, the values 9,4 & 3 cannot form a
+            triangle.)</li>
+    </ul>
     <form name="myForm">
         <div class="form-group">
-            <label for="year">year</label>
-            <input type="number" class="form-control" placeholder="Year" id="year">
-        </div>
+            <label for="Equilateral">hypotenius</label>
+            <input type="number" class="form-control" placeholder="hypotenius" id="hypotenius">
+        </div><br>
         <div class="form-group">
-            <label for="Month">Month</label>
-            <input type="number" class="form-control" placeholder="Month" id="month">
-        </div>
+            <label for="Isosceles">opposite</label>
+            <input type="number" class="form-control" placeholder="opposite" id="opposite">
+        </div><br>
         <div class="form-group">
-            <label for="Day">Day</label>
-            <input type="number" class="form-control" placeholder="Day" id="day">
-        </div>
-        <div class="radio">
-            <label class="gender">
-                <input class="radio" type="radio" name="gender" id="male">Male
-                <input class="radio" type="radio" name="gender" id="female">Female
-            </label>
-        </div>
-        <button type="button" class="btn-primary" onclick="checkName()">click</button>
-        <button type="button" class="btn-primary" onclick="reset">Reset</button>
+            <label for="Scalene">base</label>
+            <input type="number" class="form-control" placeholder="base" id="base">
+        </div><br>
+        <button type="button" id="mimi" class="btn-primary" onclick="triangleCheck()">Submit</button>
     </form>
-    </div>
-<script src="js/js script.js"></script
+    <script src="js/script.js"></script>
 </body>
+
 </html>
